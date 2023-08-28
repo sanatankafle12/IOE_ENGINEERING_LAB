@@ -15,7 +15,6 @@ int main() {
         printf("Enter your answer: ");
         fgets(answer, sizeof(answer), stdin);
         
-        // Remove the newline character from the input
         answer[strcspn(answer, "\n")] = '\0';
         
         if (strcmp(answer, correctAnswer) == 0) {
